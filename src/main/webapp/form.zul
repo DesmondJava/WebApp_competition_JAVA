@@ -1,0 +1,131 @@
+<zk xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.zkoss.org/2005/zul/zul.xsd">
+    <vbox>
+        <tabbox id="tb2" orient="vertical">
+            <tabs width="200px">
+                <tab label="Первый конкурент"/>
+                <tab label="Второй конкурент"/>
+                <tab label="Третий конкурент"/>
+            </tabs>
+            <tabpanels>
+                <tabpanel>
+                    <grid vflex="1" height="300px" width="750px">
+                        <columns>
+                            <column label="Первый конкурент" width="250px" />
+                            <column label="Поля для заполнения" width="450px"/>
+                        </columns>
+                        <rows>
+                            <row>
+                                Название ломбарда:
+                                <combobox constraint="no empty">
+                                    <comboitem label="Скарбниця" />
+                                    <comboitem label="Честный ломбард" />
+                                    <comboitem label="Золотий Кошик" />
+                                    <comboitem label="Свежая копейка" />
+                                    <comboitem label="Благо" />
+                                </combobox>
+                            </row>
+                            <row>
+                                Цена золота за 1 грамм 585 пробы:
+                                <intbox constraint="no negative,no zero,no empty" width="150px" />
+                            </row>
+                            <row>
+                                Слив золота:
+                                <intbox constraint="no negative,no zero" width="150px" />
+                            </row>
+                            <row>
+                                Процентная % ставка:
+                                <decimalbox format="###.##" constraint="no negative,no zero" width="150px"/>
+                            </row>
+                            <row>
+                                <label value="Акции" width="150px" />
+                                <textbox rows="5" width="250px">
+                                    <attribute name="value"> </attribute>
+                                </textbox>
+                            </row>
+                        </rows>
+                    </grid>
+                </tabpanel>
+                <tabpanel>
+                    <grid vflex="1" height="300px" width="750px">
+                        <columns>
+                            <column label="Второй конкурент" width="250px" />
+                            <column label="Поля для заполнения" width="450px"/>
+                        </columns>
+                        <rows>
+                            <row>
+                                Название ломбарда:
+                                <combobox constraint="no empty">
+                                    <comboitem label="Скарбниця" />
+                                    <comboitem label="Честный ломбард" />
+                                    <comboitem label="Золотий Кошик" />
+                                    <comboitem label="Свежая копейка" />
+                                    <comboitem label="Благо" />
+                                </combobox>
+                            </row>
+                            <row>
+                                Цена золота за 1 грамм 585 пробы:
+                                <intbox constraint="no negative,no zero,no empty" width="150px" />
+                            </row>
+                            <row>
+                                Слив золота:
+                                <intbox constraint="no negative,no zero" width="150px" />
+                            </row>
+                            <row>
+                                Процентная % ставка:
+                                <decimalbox format="###.##" constraint="no negative,no zero" width="150px"/>
+                            </row>
+                            <row>
+                                <label value="Акции" width="150px" />
+                                <textbox rows="5" width="250px">
+                                    <attribute name="value"> </attribute>
+                                </textbox>
+                            </row>
+                        </rows>
+                    </grid>
+
+
+                </tabpanel>
+                <tabpanel>
+                    <grid vflex="1" height="300px" width="750px">
+                        <columns>
+                            <column label="Третий конкурент" width="250px" />
+                            <column label="Поля для заполнения" width="450px"/>
+                        </columns>
+                        <rows>
+                            <row>
+                                Название ломбарда:
+                                <combobox constraint="no empty">
+                                    <comboitem label="Скарбниця" />
+                                    <comboitem label="Честный ломбард" />
+                                    <comboitem label="Золотий Кошик" />
+                                    <comboitem label="Свежая копейка" />
+                                    <comboitem label="Благо" />
+                                </combobox>
+                            </row>
+                            <row>
+                                Цена золота за 1 грамм 585 пробы:
+                                <intbox constraint="no negative,no zero,no empty" width="150px" />
+                            </row>
+                            <row>
+                                Слив золота:
+                                <intbox constraint="no negative,no zero" width="150px" />
+                            </row>
+                            <row>
+                                Процентная % ставка:
+                                <decimalbox format="###.##" constraint="no negative,no zero" width="150px"/>
+                            </row>
+                            <row>
+                                <label value="Акции" width="150px" />
+                                <textbox rows="5" width="250px">
+                                    <attribute name="value"> </attribute>
+                                </textbox>
+                            </row>
+                        </rows>
+                    </grid>
+                </tabpanel>
+            </tabpanels>
+        </tabbox>
+        <button label="Submit" width="200px" height="50px"/>
+    </vbox>
+</zk>
+
